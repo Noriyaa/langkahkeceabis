@@ -60,6 +60,8 @@ formBooking.addEventListener("submit", function(event) {
       daftarError.push("As if no one is coming here! Haha! Someone is coming right? Please say yes...");
     }else if (Number(jumlah) > 20){
       daftarError.push("Okay, Thats too many. There's only one of me, you know!?");
+    }else if (jumlah < 1){
+      daftarError.push("What kind of person is less than one? Thats creepy... Anyway, it has to be a full person!")
     }
 
     if (berangkat === ""){
